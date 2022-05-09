@@ -16,8 +16,8 @@
 </br>
 <p align="center">
 
-  <a href="https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer">
-    <img src="" alt="Logo" width="140" height="140">
+  <a href="https://github.com/EpicBlue1/boltbudget">
+    <img src="src\img\Logo.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">Bolt Budget</h3>
@@ -26,9 +26,9 @@
 
    <br />
    <br />    ·
-    <a href="https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer/issues">Report Bug</a>
+    <a href="https://github.com/EpicBlue1/boltbudget/issues">Report Bug</a>
     ·
-    <a href="https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer/issues">Request Feature</a>
+    <a href="https://github.com/EpicBlue1/boltbudget/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -90,12 +90,12 @@ Ensure that you have the latest version of [NPM](https://www.npmjs.com/) install
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/EpicBlue1/boltbudget.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer.git
+   git clone https://github.com/EpicBlue1/boltbudget.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -195,7 +195,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 * **Reinhardt de Beer** - [21100115@virtualwindow.co.za](mailto:21100115@virtualwindow.co.za) - [@rdb_fotopatat](https://www.instagram.com/rdb_fotopatat/) 
-* **Project Link** - https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer
+* **Project Link** - https://github.com/EpicBlue1/boltbudget
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements

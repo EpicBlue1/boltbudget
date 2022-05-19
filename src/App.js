@@ -1,25 +1,14 @@
 import Link from './components/Link';
-import AverageForm from './components/AverageForm';
+import Headsection from './components/HeadSection';
+import ExpensesSection from './components/ExpensesSec';
+import Recurring from './components/recurring';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Link page="https://facebook.com/">Facebook</Link>
-        <img src="" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <AverageForm />
+      <Headsection />
+      <Recurring />
+      <ExpensesSection />
     </div>
   );
 }

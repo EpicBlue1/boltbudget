@@ -35,20 +35,19 @@ export default function AverageFormatter() {
     };
 
     return (
-        <div>
-            {}
-                {formValues.map((number, index) => (
-                    <div key={index}>
-                        <input onChange={(e) => handInputChange(+e.target.value, index)} defaultValue={number} name="numbers" type="number" />
-                        <div onClick={removeNumberFromArray}>X</div>                    
-                    </div>
-                ))}
-
-            {}
-            <div onClick = {addNewNumber}>add</div>
-            <div onClick = {doCalculations}>Do average</div>
-
-             
+        <div className='SectionTwo'>
+            <h1>Expenses</h1>
+            <h2>Recent purchases</h2>
+            <div className='subSectionInfo'>
+                <h4>Select Period</h4>
+                <select className='dropDown'>
+                    <option></option>
+                </select>
+            </div>
+            <div className='subSectionInfo'>
+            <h4>Select Period</h4>
+            <div className='dropDown'></div>
+            </div>
         </div>
     )
 }

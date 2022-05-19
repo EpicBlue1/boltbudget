@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<a
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "color": "green",
+    }
+  }
+>
+  Facebook
+</a>
+`;
+
+exports[` 2`] = `
+<a
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "color": "green",
+    }
+  }
+>
+  Facebook
+</a>
+`;
+
+exports[`Testing link component should 1`] = `
+<a
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "color": "green",
+    }
+  }
+>
+  Facebook
+</a>
+`;
+
+exports[`Testing link component should 2`] = `
+<a
+  href="#"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  style={
+    Object {
+      "color": "green",
+    }
+  }
+>
+  Facebook
+</a>
+`;

@@ -4,7 +4,8 @@ import './index.css';
 import './css/Headsection.css';
 import './css/rowTwo.css';
 import './css/rowThree.css';
-import './css/switch.css'
+import './css/switch.css';
+import './css/GroceriesSec.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
 

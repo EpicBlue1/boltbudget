@@ -1,8 +1,13 @@
 .SectionOne{
     width: 87%;
-    height: 400px;
+    height: 150px;
     float: right;
-    background-color: blue;
+}
+
+.HeadHeading{
+    width: 87%;
+    height: 100px;
+    float: right;
 }
 
 .subSections{
@@ -10,15 +15,13 @@
     padding: 0 !important;
     display: inline-block;
     width: 100%;
-    height: 300px;
-    background-color: aqua;
+    height: 100px;
 }
 
 .subSection{
-    margin-top: 5%;
     display: inline-block;
     width: 33.33%;
-    height: 100px;
+    height: 50px;
     text-align: center;
 }
 

@@ -1,0 +1,31 @@
+.SectionFour{
+    width: 48.5%;
+    height: 450px;
+    float: right;
+}
+
+.SectionFourL{
+    width: 38.5%;
+    height: 450px;
+    float: right;    
+}
+
+.floatLeft{
+    float: right;
+}
+
+.subSectionInfoThree h2{
+    margin-top: 15px !important;
+}
+
+.percentageBlock{
+    float: right;
+    height: 100px;
+}
+
+.subSectionInfoThree{
+    width: 48%;
+    height: 400px;
+    float: left;
+    padding-left: 10px;
+}

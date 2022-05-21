@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import calculateAverage from '../functions/calculations';
 
-export default function AverageFormatter() {
+export default function HeadSection() {
 
     const [formValues, setformValues] = useState([0, 2]);
     const [CurrentValues ,setCurrentValues] = useState();
@@ -36,12 +36,14 @@ export default function AverageFormatter() {
 
     return (
         <div className='SectionOne'>
-            <h1>Overview</h1>
+            <hr></hr>
             <div className='subSections'>
-                <div className='subSection'><h3>Total Income after tax</h3><br></br><h1>R46 589,40</h1></div>
-                <div className='subSection'><h3>Total Income after tax</h3><br></br><h1>R13 327</h1></div>
-                <div className='subSection'><h3>Total Income after tax</h3><br></br><h1>R65 560</h1></div>
+                <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R46 589,40</h2></div>
+                <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R13 327</h2></div>
+                <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R65 560</h2></div>
             </div>
+            <hr></hr>
         </div>
+        
     )
 }

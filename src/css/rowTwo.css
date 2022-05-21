@@ -1,19 +1,17 @@
 .SectionTwo{
     width: 43.5%;
-    height: 650px;
+    height: 700px;
     float: right;
-    background-color: blue;
 }
 
 .subSectionTwo{
     height: 210px;
-    background-color: aqua;
+
 }
 
 .subSectionInfo{
     width: 48%;
-    height: 80px;
-    background-color: red;
+    height: 100px;
     float: left;
     padding-left: 10px;
 }

@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import calculateAverage from '../functions/calculations';
+import Footer from './subcomp/footer';
 
-export default function AverageFormatter() {
+export default function Expenses() {
 
     const [formValues, setformValues] = useState([0, 2]);
     const [CurrentValues ,setCurrentValues] = useState();
@@ -35,6 +36,7 @@ export default function AverageFormatter() {
     };
 
     return (
+        <>
         <div className='SectionTwo'>
             <h1>Expenses</h1>
             <h2>Recent purchases</h2>
@@ -45,9 +47,64 @@ export default function AverageFormatter() {
                 </select>
             </div>
             <div className='subSectionInfo'>
-            <h4>Select Period</h4>
-            <div className='dropDown'></div>
+            <h4>Total This Month</h4>
+            <div className='dropDown'><h4>R3216</h4></div>
             </div>
+            <table>
+                <tr>
+                    <th className='tableThree Align_Left'><h4>Expenses</h4></th>
+                    <th className='tableThree Align_Left'><h4>Date</h4></th>
+                    <th className='tableThree Align_Left'><h4>Price</h4></th>
+                </tr>
+            </table>
+            <div className='maxHeight overflow'>
+            <table>
+                <tr>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                </tr>   
+                <tr>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                </tr>
+                <tr>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                </tr>
+            </table>
+            </div>
+            <h2>Recurring purchases</h2>
+            <table>
+                <tr>
+                    <th className='tableThree Align_Left'><h4>Expenses</h4></th>
+                    <th className='tableThree Align_Left'><h4>Date</h4></th>
+                    <th className='tableThree Align_Left'><h4>Price</h4></th>
+                </tr>
+            </table>
+            <div className='maxHeight overflow'>
+            <table>
+                <tr>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                </tr>   
+                <tr>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                </tr>
+                <tr>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                    <td className='tableThree Align_Left'><h4>Expenses</h4></td>
+                </tr>
+            </table>
+            </div>
+            <button className='addBut'></button>
         </div>
+        </>
     )
 }

@@ -1,14 +1,18 @@
 import Link from './components/Link';
-import Headsection from './components/HeadSection';
-import ExpensesSection from './components/ExpensesSec';
-import Recurring from './components/recurring';
+import Navigation from './components/subcomp/nav';
+import Overview from './components/Overview';
+import Savings from './components/Savings'
+import {Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Headsection />
-      <Recurring />
-      <ExpensesSection />
+      <Navigation/>
+      <Routes>
+        <Route path="/" element={<Overview />}></Route>
+        <Route path="/Savings" element={<Savings />}></Route>
+        <Route path="/Groceries" element={<Overview />}></Route>
+      </Routes>
     </div>
   );
 }

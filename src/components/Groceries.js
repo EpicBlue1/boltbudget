@@ -10,6 +10,13 @@ export default function AverageFormatter() {
                 <hr></hr>
             </div>
 
+            <div className='SectionOne'>
+                    <div className='subSections'>
+                        <h4>Lorem ipsum dolor sit amet. Sed rerum repudiandae id iste sapiente cum voluptatem iure in ipsum voluptatem est consequatur quia quo dicta doloremque est nesciunt laboriosam.</h4>
+                    </div>
+                    <hr></hr>
+                </div>
+
             {/* //right section */}
             <div className='SectionFive'>
             <h1>Frequently bought groceries</h1>

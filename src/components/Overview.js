@@ -13,6 +13,12 @@ export default function overView() {
         <br></br>
         </div>
         <Headsection />
+        <div className='SectionOne'>
+        <div className='subSections'>
+            <h4>Lorem ipsum dolor sit amet. Sed rerum repudiandae id iste sapiente cum voluptatem iure in ipsum voluptatem est consequatur quia quo dicta doloremque est nesciunt laboriosam.</h4>
+        </div>
+        <hr></hr>
+        </div>
         <TaxBrackets />
         <Expenses />
         </>

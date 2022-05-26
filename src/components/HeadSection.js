@@ -1,45 +1,54 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import calculateAverage from '../functions/calculations';
 
 export default function HeadSection() {
 
-    const [formValues, setformValues] = useState([0, 2]);
-    const [CurrentValues ,setCurrentValues] = useState();
+    const [TotIncome, settotIncome] = useState(0);
+    const [totTaxBrackets ,settotTaxBrackets] = useState(0);
     const [AvValues ,setAvValues] = useState();
 
-    const handInputChange = (newNumber, index) => {
-        var changingFormValues = formValues
-        changingFormValues[index] = newNumber;
-
-        setformValues(changingFormValues)
+    const Users= [{
+        name: 'Johan Golden', salary: 60000
+    }, {
+        name: 'Susan Golden', salary: 27000
     }
+    ]
 
-    const addNewNumber = () => {
-        setformValues([...formValues, 0]);
+    const expenses= [{
+        name: 'Johan Golden', salary: 60000
+    }, {
+        name: 'Susan Golden', salary: 27000
     }
+    ]
 
-    const doCalculations = () => {
-        var average = calculateAverage(formValues);
-        setCurrentValues(average);
+    useEffect(() => {
 
-        setAvValues(average);
+        let totalIcome = 0;
+        let totalIcomeTax = 0;
 
+        Users.forEach(element => {
+            totalIcome += element.salary;
+          });
 
-        console.log(average);
-    }
+        console.log(totalIcome);
 
-    const removeNumberFromArray = (index) => {
-        var changingFormValues = formValues;
-        changingFormValues.splice(index, 1);
-        setformValues(changingFormValues);
-    };
+        settotIncome(totalIcome);
+
+        //taxBrackets
+        totalIcome = totalIcome * 12;
+
+        console.log(totalIcome);
+
+    }, []);
+
+    
 
     return (
         <div className='SectionOne'>
             <hr></hr>
             <div className='subSections'>
-                <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R46 589,40</h2></div>
-                <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R13 327</h2></div>
+                <div className='subSection'><h3>Total Income</h3><br></br><h2>R{TotIncome}</h2></div>
+                <div className='subSection'><h3>Total Expenses</h3><br></br><h2>R13 327</h2></div>
                 <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R65 560</h2></div>
             </div>
             <hr></hr>

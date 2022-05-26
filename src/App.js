@@ -1,4 +1,3 @@
-import Link from './components/Link';
 import Navigation from './components/subcomp/nav';
 import Overview from './components/Overview';
 import Savings from './components/Savings'

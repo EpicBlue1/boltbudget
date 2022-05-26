@@ -76,7 +76,8 @@ h5{
   width: 200px !important;
   border-radius: 5px !important;
   border: none !important;
-  background-color: white !important;
+  background-color: #2e3a97;
+  color: white !important;
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
 }
 
@@ -85,7 +86,7 @@ h5{
   position: fixed;
   top: 0 !important;
   left: 0 !important;
-  width: 25vh;
+  width: 22vh;
   height: 100vh;
   background-image: url(../src/img/branding.svg);
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);

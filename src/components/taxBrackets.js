@@ -18,7 +18,7 @@ export default function taxBrackets() {
                 <tr>
                     <th className='tableFour Align_Left'><h4>Name</h4></th>
                     <th className='tableFour Align_Left'><h4>Income</h4></th>
-                    <th className='tableFour Align_Left'><h4>Price</h4></th>
+                    <th className='tableFour Align_Left'><h4>Tax Brackets</h4></th>
                     <th className='tableFour Align_Left'><h4>Income after tax</h4></th>
                 </tr>
             </table>
@@ -44,7 +44,13 @@ export default function taxBrackets() {
                 </tr>
             </table>
             </div>
-            <button className='addBut'></button>
+            <div className='add'>    
+                <form>
+                    <input required placeholder='Person Name' name="TaxPerName" aria-label='TaxPerName' className='addInput'/>
+                    <input required placeholder='Income' type="number" name="TaxPerIncome" aria-label='TaxPerIcome' className='addInput'/>
+                    <button className='addBut'></button>
+                </form>        
+            </div>
         </div>
     )
 }

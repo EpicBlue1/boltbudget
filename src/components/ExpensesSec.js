@@ -4,37 +4,6 @@ import Footer from './subcomp/footer';
 
 export default function Expenses() {
 
-    const [formValues, setformValues] = useState([0, 2]);
-    const [CurrentValues ,setCurrentValues] = useState();
-    const [AvValues ,setAvValues] = useState();
-
-    const handInputChange = (newNumber, index) => {
-        var changingFormValues = formValues
-        changingFormValues[index] = newNumber;
-
-        setformValues(changingFormValues)
-    }
-
-    const addNewNumber = () => {
-        setformValues([...formValues, 0]);
-    }
-
-    const doCalculations = () => {
-        var average = calculateAverage(formValues);
-        setCurrentValues(average);
-
-        setAvValues(average);
-
-
-        console.log(average);
-    }
-
-    const removeNumberFromArray = (index) => {
-        var changingFormValues = formValues;
-        changingFormValues.splice(index, 1);
-        setformValues(changingFormValues);
-    };
-
     return (
         <>
         <div className='SectionTwo'>
@@ -103,7 +72,17 @@ export default function Expenses() {
                 </tr>
             </table>
             </div>
-            <button className='addBut'></button>
+            <div className='add'>    
+                <form>
+                    <input required placeholder='Expense Name' name="ExpenseName" aria-label='ExpensesRec' className='addInput'/>
+                    <select required className='addInput'>
+                        <option>Today</option>
+                    </select>
+                    <input required placeholder='Price' type="number" name="ExpenseName" className='addInput'/>
+                    <button className='addBut'></button>
+                </form>        
+            </div>
+
         </div>
         </>
     )

@@ -29,10 +29,10 @@ export default function AverageFormatter() {
             </div>
             <table>
                 <tr>
-                    <th className='tableFour Align_Left'><h4>Goal</h4></th>
-                    <th className='tableFour Align_Left'><h4>Date</h4></th>
-                    <th className='tableFour Align_Left'><h4>Price</h4></th>
-                    <th className='tableFour Align_Left'><h4>Price</h4></th>
+                    <th className='tableFour Align_Left'><h4>Goal Name</h4></th>
+                    <th className='tableFour Align_Left'><h4>Goal Price</h4></th>
+                    <th className='tableFour Align_Left'><h4>saving(Monthly)</h4></th>
+                    <th className='tableFour Align_Left'><h4>Duration</h4></th>
                 </tr>
             </table>
             <div className='maxHeight overflow'>
@@ -45,7 +45,14 @@ export default function AverageFormatter() {
                 </tr>
             </table>
             </div>
-            <button className='addBut'></button>
+            <div className='add'>    
+                <form>
+                    <input required placeholder='Goal Name' name="GoalName" aria-label='GoalName' className='addInput'/>
+                    <input required placeholder='Goal Price' type="number" name="GoalPrice" aria-label='GoalPrice' className='addInput'/>
+                    <input required placeholder='Saving  Monthly' type="number" name="MonthlySaving" aria-label='MonthlySaving' className='addInput'/>
+                    <button className='addBut'></button>
+                </form>        
+            </div>
             </div>
 
             {/* //left section */}
@@ -75,7 +82,7 @@ export default function AverageFormatter() {
 
             <div className='subSectionInfoThree'>
             <h2>Percentage:</h2>
-            <input placeholder="%" className='dropDown floatLeft'/>
+            <input placeholder="Type percentage to save" className='dropDown floatLeft'/>
             <div className='percentageBlock inline'>
                 <h2>=</h2>
                 <div className='dropDown inline'></div>

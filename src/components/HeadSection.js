@@ -1,20 +1,24 @@
 import React from "react";
+import {useState, useEffect} from 'react';
+import IandE from './calculations/IncomeAndExpenses'
 
-const HeadSection = (props) => {
+export default function Head() {
 
-    console.log(props.name);
+    const [Users, setUsers] = useState([
+    {name: 'Johan Golden', salary: 67000}, 
+    {name: 'Susan Golden', salary: 20000}
+    ]);
+
+    const Expenses= [{
+        prod_name: 'Dairy Milk 1L', cost: 19.99
+    }, {
+        prod_name: 'Albany White Bread', cost: 14.99
+    }]
 
     return (
         <div className='SectionOne'>
-            <hr></hr>
-            <div className='subSections'>
-                <div className='subSection'><h3>Total Income</h3><br></br><h2>R{props.totalIncome}</h2></div>
-                <div className='subSection'><h3>Total Expenses</h3><br></br><h2>R13 327</h2></div>
-                <div className='subSection'><h3>Total Income after tax</h3><br></br><h2>R65 560</h2></div>
-            </div>
-            <hr></hr>
+            <IandE userData = {Users} expenses = {Expenses}/>
         </div> 
     )
 }
 
-export default HeadSection;

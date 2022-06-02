@@ -1,6 +1,24 @@
 import Headsection from './HeadSection';
+import {useState, useEffect} from 'react';
 
 export default function AverageFormatter() {
+
+    const TotalIncome = 40000;
+    const [MonthlySav, setMonthlySav] = useState(0);
+    const [YearlySav, setYearlySav] = useState(0);
+    const [Percentage, setPercentage] = useState("");
+
+    const CalculatePerc = (e) => {
+        e.preventDefault();
+        console.log(Percentage);
+        let yearly = (TotalIncome * 12) * (Percentage / 100);
+        console.log(yearly);
+        setYearlySav(yearly)
+
+        let monthly = TotalIncome * (Percentage / 100);
+        console.log(monthly);
+        setMonthlySav(monthly)
+    }
 
     return (
         <div className="left">
@@ -82,13 +100,16 @@ export default function AverageFormatter() {
 
             <div className='subSectionInfoThree'>
             <h2>Percentage:</h2>
-            <input placeholder="Type percentage to save" className='dropDown floatLeft'/>
+            <div className='SavingInput floatLeft'>
+                <button onClick={CalculatePerc} name='Calc' className='Savings floatLeft'>GO</button>
+                <input type={"number"} value={Percentage} name="percentageVal" aria-label='percentageVal' onChange={(e) => {setPercentage(e.target.value)}} placeholder="Type percentage to save" className='dropDownI floatLeft'/>
+            </div>
             <div className='percentageBlock inline'>
                 <h2>=</h2>
-                <div className='dropDown inline'></div>
+                <div data-testid="MonthlyDisp" className='dropDown inline'>R{MonthlySav}</div>
                 <h3>Monthly savings</h3>
                 <br></br>
-                <div className='dropDown inline'></div>
+                <div data-testid="YearlyDisp" className='dropDown inline'>R{YearlySav}</div>
                 <h3>Yearly savings</h3>
             </div>
             </div>

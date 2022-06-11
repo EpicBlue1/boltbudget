@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import './css/Overview.css';
-import './css/nav.css'
+import './css/nav.css';
+import './css/savings.css'
 import {BrowserRouter} from 'react-router-dom';
 
 

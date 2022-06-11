@@ -2,13 +2,9 @@ import React from 'react';
 import {useEffect, useState} from 'react';
 import TableItem from './subComps/userTabItem';
 import TableItemTwo from './subComps/expTabItem';
+import SavingsSec from './Savings';
 
 const Overview = (props) => {
-
-    // const [Users, setUsers] = useState([
-    //     {name: 'Johan Golden', salary: 67000}, 
-    //     {name: 'Susan Golden', salary: 20000}
-    // ]);
 
     const [tableItemOne, settableItemOne] = useState();
     const [tableItemTwo, settableItemTwo] = useState();
@@ -22,6 +18,10 @@ const Overview = (props) => {
         let obj = {name: FirstName + " " + LastName, salary: Salary}
         
         props.UsersBef.push(obj);
+
+        document.getElementById('FirstName').value = "";
+        document.getElementById('LastName').value = "";
+        document.getElementById('Salary').value = "";
     }
 
     const AddExp = (e) => {
@@ -102,7 +102,10 @@ const Overview = (props) => {
                 </table>
             </div>
             <hr></hr>
-
+            <h1 className="Title">
+                Savings
+            </h1>
+            <SavingsSec totAfterTax={props.totAfterTax} totalIncome={props.totalIncome}/>
         </div>
     );
 };

@@ -23,7 +23,6 @@ const Calculations = (props) => {
 
     let totalIncome = 0;
     let totalExpenses = 0;
-    let totalIncomeAfterTax = 0;
 
     //Total Income All users
     Before.forEach(element => {
@@ -107,7 +106,7 @@ const Calculations = (props) => {
     settotTaxesAll(Math.round(totalTaxAllUsers));
 
     console.log(UserTaxes)
-}, [UserTaxes]);
+});
 
 
 if(UserTaxes === undefined){

@@ -7,233 +7,53 @@ body {
   background-color: #f2f2f2 !important;
 }
 
-button{
-  border: none !important;
-  background-color: #f2f2f2 !important;
+.Container{
+  width: 85%;
+  float: right;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #DBAA2C;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #2E3A97;
-}
-
-code {
-  font-family: 'Archivo', sans-serif;
-  font-family: 'Lato', sans-serif;
-}
-
-h1{
-  margin: 0 !important;
-  font-size: 42px !important;
-  text-align: center !important;
-  margin-bottom: 10px !important;
-}
-
-h2{
-  font-size: 32px !important;
-  margin-top: 0 !important;
-  margin-bottom: 10px !important;
-}
-
-h3{
-  height: 20px !important;
-  margin: 0 !important;
-}
-
-input{
-  font-size: 16px !important;
-  height: 28px !important;
-  color: black !important;
-  font-weight: bold !important;
-  text-align: center;
-  margin: 0;
-  font-family: 'Archivo', sans-serif !important;
-  font-family: 'Lato', sans-serif !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  font-family: 'Archivo', sans-serif;
-  font-family: 'Lato', sans-serif;
-}
-
-h4{
-  margin-top: 10px;
-  height: 5px !important;
-}
-
-td h4{
-  margin: 0 !important;
-  height: 20px !important;
-}
-
-h5{
-  margin: 0 !important;
-  height: 20px;
-}
-
-.dropDown{
-  font-size: 18px !important;
-  font-weight: bold !important;
-  height: 30px !important;
-  width: 200px !important;
-  border-radius: 5px !important;
-  border: none !important;
-  /* background-color: #2e3a97; */
-  background-color: white !important;
-  border: 2px solid #2e3a97 !important;
-  color: black !important;
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-}
-
-.SavingInput{
-  width: 210px;
-  height: 38px;
-}
-
-.dropDownI{
-  font-size: 18px !important;
-  font-weight: bold !important;
-  height: 30px !important;
-  width: 100px !important;
-  border-radius: 5px !important;
-  border: none !important;
-  /* background-color: #2e3a97; */
-  background-color: white !important;
-  border: 2px solid #2e3a97 !important;
-  color: black !important;
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-}
-
-.Savings{
-  cursor: pointer;
-  font-size: 18px !important;
-  font-weight: bold !important;
-  width: 80px;
-  margin-left: 20px;
-  height: 34px !important;
-  background-color: white !important;
-  border-radius: 5px !important;
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-}
-
-.Savings:hover{
-  box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.1);
-}
-
-.nav{
-  text-align: center;
-  position: fixed;
-  top: 0 !important;
-  left: 0 !important;
-  width: 24vh;
-  height: 100vh;
-  background-image: url(../src/img/branding.svg);
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-
-}
-
-.Footer{
+.Title{
   width: 100%;
-  height: 20vh;
-  background-color: #2b2b2b;
-}
-
-.Align_Left{
-  text-align: left;
-
-}
-
-.Align_Right{
-  text-align: Right;
-}
-
-.Align_Center{
   text-align: center;
-}
-
-.tableFour{
-  width: 25%;
-}
-
-.tableThree{
-  width: 33.33%;
-}
-
-table{
-  width: 90%;
-}
-
-.overflow{
-  overflow: auto;
-}
-
-.maxHeight{
-  height: 130px;
-}
-
-.add{
-  width: 100%;
-  height: 60px;
-}
-
-.addBut{
-  float: left;
-  width: 55px;
-  height: 55px;
-  background-image: url(../src/img/addBut.svg);
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-  background-size: cover;
-  cursor: pointer;
-}
-
-.addInput{
-  float: left;
-  padding-top: 0 !important;
-  margin: 0 !important;
-  border-radius: 5px;
-  background-color: white;
-  display: inline-block;
-  margin-right: 10px !important;
-  width: 120px;
-  height: 30px;
-  margin-top: 12px !important;
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
-  background-color: white !important;
-  border: 2px solid #2e3a97 !important;
 }
 
 .inline{
   display: inline-block;
 }
 
-.logo{
-  margin-left: 100px;
-  width: 10px;
-  height: 10px;
-  background-image: url(../src/img/Logo.svg);
-  background-size: cover;
+.HeadingTwo{
+  text-align: center;
+  width: 33%;
 }
 
-a{
-  text-decoration: none !important;
-  color: black;
+input{
+  float: left;
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid #DBAA2C;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.08);
 }
 
-a:hover{
-  text-decoration: underline !important;
+button{
+  width: 110px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2E3A97;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.08);
+  font-size: 16px;
+  color: white;
+}
+
+table{
+  width: 100%;  
+}
+
+.TBtitles{
+  height: 25px;
+  background-color: #2E3A97;
+  border-bottom: 1px solid black !important;
+  color: white !important;
+  margin-bottom: 10px;
 }

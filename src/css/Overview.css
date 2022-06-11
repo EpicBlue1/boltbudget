@@ -1,0 +1,15 @@
+.AddUserSec{
+    float:left;
+    width: 30%;
+    height: 35vh;
+  }
+
+  .UserSec{
+    float:left;
+    width: 70%;
+    height: 35vh;
+  }
+
+  .addUser{
+    margin-right: 1%;
+  }

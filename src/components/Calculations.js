@@ -1,30 +1,40 @@
-import React from "react";
+import React from 'react';
+import Overview from './Overview';
 import {useState, useEffect} from 'react';
 
-export default function IandE(props) {
+const Calculations = (props) => {
+    const [Before, setBefore] = useState([
+        {name: 'Johan Golden', salary: 67000}, 
+        {name: 'Susan Golden', salary: 20000}
+    ])
+    const [Expenses, setExp] = useState([{
+        prod_name: 'Dairy Milk 1L', cost: 19.99
+    }, {
+        prod_name: 'Albany White Bread', cost: 14.99
+    }])
+    const [TotIncome, settotIncome] = useState();
+    const [totExpenses, settotExpenses] = useState();
+    const [totTaxesAll, settotTaxesAll] = useState();
+    const [UserTaxes ,setUserTaxes] = useState();
 
-    const [AvValues ,setAvValues] = useState();
-    const [TotIncome, settotIncome] = useState(0);
-    const [totExpenses, settotExpenses] = useState(0);
-    const [totTaxesAll, settotTaxesAll] = useState(0);
-    const [UserTaxes ,setUserTaxes] = useState(0);
+    useEffect(() => {
 
-useEffect(() => {
+    console.log(Before);
 
     let totalIncome = 0;
     let totalExpenses = 0;
-    let totalIncomeTax = 0;
+    let totalIncomeAfterTax = 0;
 
     //Total Income All users
-    props.userData.forEach(element => {
+    Before.forEach(element => {
         totalIncome += element.salary;
     });
-    settotIncome(totalIncome);
-    let totalIncomeBef = totalIncome *12;
 
+    // totalIncomeAfterTax = props.userData.salary
+    settotIncome(totalIncome);
 
     //Total expenses
-    props.expenses.forEach(element => {
+    Expenses.forEach(element => {
         totalExpenses += element.cost;
     });
     settotExpenses(totalExpenses);
@@ -32,10 +42,9 @@ useEffect(() => {
     let UserTax = []
     
     //credits: Analysis✿ ಠ_ಠ
-    props.userData.forEach(element => {
+    Before.forEach(element => {
         let incomebefore = element.salary;
         let taxBracket = "";
-        let yearlytax = 0;
 
         if(incomebefore < (226000 / 12)){
 
@@ -84,33 +93,34 @@ useEffect(() => {
             taxBracket = "614 192 + 45% of taxable income above 1 731 600";
         }
 
-        UserTax.push({name: element.name, salaryAfterTax: incomebefore, taxB: taxBracket});
+        UserTax.push({name: element.name, salary: element.salary, salaryAfterTax: incomebefore, taxB: taxBracket});
+
     });
 
     setUserTaxes(UserTax);
 
     let totalTaxAllUsers = 0;
-    //Total expenses
+    //Total Tax monthly for all users combined
     UserTax.forEach(element => {
         totalTaxAllUsers += (element.salaryAfterTax / 12);
     });
     settotTaxesAll(Math.round(totalTaxAllUsers));
 
-}, []);
+    console.log(UserTaxes)
+}, [UserTaxes]);
 
-    return(
-        <>
-            <hr></hr>
-            <div className='subSections'>
-                <div className='subSection'><h3>Total Income</h3><br></br><h2>R{TotIncome}</h2></div>
-                <div className='subSection'><h3>Total Expenses</h3><br></br><h2>R{totExpenses}</h2></div>
-                <div className='subSection'><h3>Total Income after tax all users(Monthly)</h3><br></br><h2>R{totTaxesAll}</h2></div>
-            </div>
-            <hr></hr>
-        </>
-    ) 
 
+if(UserTaxes === undefined){
+    return (
+        <div>Loading...</div>
+    )
 }
 
+    return (
+        <>
+            <Overview totExp={totExpenses} expenses={Expenses} totAfterTax={totTaxesAll} totalIncome={TotIncome} setBefore={setBefore} UsersBef={Before} totTaxes={UserTaxes} />
+        </>
+    );
+};
 
-
+export default Calculations;

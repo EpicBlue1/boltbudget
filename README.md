@@ -58,9 +58,9 @@ Run the following in the command-line to install all the required dependencies:
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| React Documentation | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) https://reactjs.org/ |
-| Jest Documentation  | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) https://jestjs.io/docs/expect |
-| React Router Dom    | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) https://v5.reactrouter.com/web/guides/quick-start |
+| React Documentation |  https://reactjs.org/ |
+| Jest Documentation  |  https://jestjs.io/docs/expect |
+| React Router Dom    |  https://v5.reactrouter.com/web/guides/quick-start |
 
 
 ## Features

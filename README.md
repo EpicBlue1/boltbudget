@@ -18,14 +18,22 @@ A web application designed for estimating your family's budget, as well as imple
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
 ## Table of contents
 
 * [Installation](#Installation)
+    * [Depebdancy Documentation](#Dependancies-Utilized)
+* [Dependancies-Utilized](#Dependancies-Utilized)
+* [Features](#Features)
+    * [Feature-Screenshots](#Feature-Screenshots)
+* [Ideation](#Ideation)
+* [Development-Process](#Development-Process)
+* [Final-Outcome](#Final-Outcome)
+    * [Mockups](#Mockups)
+    * [Video-Demonstration](#Video-Demonstration)
+    * [Final-Outcome](#Final-Outcome)
+* [Authors](#Authors)
+* [License](#License)
+* [Contact](#Contact)
 ## Installation
 
 1. GitHub Desktop
@@ -44,13 +52,78 @@ Run the following in the command-line to install all the required dependencies:
    npm install
    ```
 
-4. An API key is not required## Color Reference
+4. An API key is not required## Dependancies Utilized
 
-## Color Reference
+## Dependancies Utilized
 
-| Name              | Link                                                                       |
+| Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
 | React Documentation | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) https://reactjs.org/ |
-| Jest Documentation | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) https://jestjs.io/docs/expect |
-| React Router Dom | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) https://v5.reactrouter.com/web/guides/quick-start |
+| Jest Documentation  | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) https://jestjs.io/docs/expect |
+| React Router Dom    | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) https://v5.reactrouter.com/web/guides/quick-start |
 
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Feature Screenshots  
+#### Section One
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+#### Section One
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+#### Section One
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+#### Section One
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+# Ideation
+[Pinterest Board For Concept](https://za.pinterest.com/debeer0072/unit-testing-website/)
+### Wireframes
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Development Process
+
+* Utilized React `Charts.JS` dependency for Data visualization
+* Utilized React `<Model-Viewer>` dependency for 3D interactable globe
+* Utilized React `Sxios` dependency to make api calls
+* Implemented Routing with `React-Router v6`.
+* API End Point: https://api.nasa.gov/#browseAPI 
+## Final Outcome
+
+### Mockups
+
+![Mockup One](src/img/Mockup1.png)
+
+![Mockup Two](src/img/Mockup2.png)
+
+![Mockup Three](src/img/Mockup3.png)
+
+### Video Demonstration
+
+To see a run through of the application, click below:
+
+[View Demonstration](https://youtu.be/_ifrJrLPCv0)
+
+## Authors
+
+* **Reinhardt de Beer** - [EpicBlue1](https://github.com/EpicBlue1)
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.\
+
+## Contact
+
+* **Reinhardt de Beer** - [21100115@virtualwindow.co.za](mailto:21100115@virtualwindow.co.za) - [@rdb_fotopatat](https://www.instagram.com/rdb_fotopatat/) 
+* **Project Link** - https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer

@@ -1,5 +1,6 @@
 import React from 'react';
 import {useEffect, useState} from 'react';
+import Option from './subComps/dropDown';
 
 const Savings = (props) => {
 
@@ -31,10 +32,10 @@ const Savings = (props) => {
     }
 
     return (
-        <div className="SavSec">
+        <div  id="section3" className="SavSec">
             <div className="SavingsCol float">
                 <p className="float">Calculate after tax</p>
-                <input  onClick={GetVal} className="CHECK float" type="checkbox" name="love" value="love" id="love"/>
+                <input  onClick={GetVal} className="CHECK" type="checkbox" id="love"/>
                 <br/><br/>
                 <h2 className="SavingHeading">Percentage</h2>
                 <input id="CheckBox" placeholder="%" type="numer"/>

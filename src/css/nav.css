@@ -8,3 +8,89 @@
     /* background-image: url(../src/img/branding.svg); */
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.05);
 }
+
+.Logo{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/Logo.png);
+    background-color: white;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+  }
+  
+  .subItem{
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 85% !important;
+    height: 39px !important;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .subItem::before {  
+    height: 39px !important;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .subItem:hover::before {
+    height: 39px !important;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .subItem::before {
+    height: 39px !important;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #DBAA2C;
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  .subItemU{
+    background-color: #2E3A97;
+    color: white !important;
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 85% !important;
+    height: 39px !important;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .subItemU::before {  
+    height: 39px !important;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .subItemU:hover::before {
+    height: 39px !important;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .subItemU::before {
+    height: 39px !important;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #DBAA2C;
+    z-index: -1;
+    transition: transform .3s ease;
+  }

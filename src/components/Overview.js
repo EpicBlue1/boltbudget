@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react';
 import TableItem from './subComps/userTabItem';
 import TableItemTwo from './subComps/expTabItem';
 import SavingsSec from './Savings';
+import Modal from './subComps/infoModal';
 
 const Overview = (props) => {
 
@@ -43,20 +44,32 @@ const Overview = (props) => {
     });
 
     return (
-        <div className="Container">
-            <h1 className="Title">
+        <div id="section1" className="Container">
+            {/* <Modal /> */}
+            <h1  className="Title">
                 Overview
             </h1>
             <div className="OverviewSub">
-                <h2 className="HeadingTwo inline">Total Income</h2>
+                <h2 className="HeadingTwo inline">Total Income (Household)</h2>
                 <h2 className="HeadingTwo inline">Total Expenses</h2>
-                <h2 className="HeadingTwo inline">Total Tax Expense</h2>
+                <h2 className="HeadingTwo inline">Total Tax Expense (Household)</h2>
                 <h2 className="HeadingTwo inline">R{props.totalIncome}</h2>
                 <h2 className="HeadingTwo inline">R{props.totExp}</h2>
                 <h2 className="HeadingTwo inline">R{props.totAfterTax}</h2>
             </div>
             <hr></hr>
-            <div className="AddUserSec">
+            <h2 className="TitleTwo">
+                What is Bolt Budget?
+            </h2>
+            <div className="OverviewSub TitleTwo">
+                <p>lorem ipsum dolor</p>
+            </div>
+            <br></br>
+            <hr></hr>
+            <h1 className="Title">
+                Users
+            </h1>
+            <div id="section1" className="AddUserSec">
             <h2 className="">Add a user</h2>
                 <form onSubmit={AddUserSec}>
                     <input id='FirstName' required placeholder="First Name" className="addUser"/>
@@ -68,7 +81,7 @@ const Overview = (props) => {
                 </form>
             </div>
             <div className="UserSec">
-            <h2>Users</h2>
+                <br></br>
                 <table>
                 <tr className="TBtitles">
                     <th>Name</th>
@@ -80,18 +93,21 @@ const Overview = (props) => {
                 </table>
             </div>
             <hr></hr>
-            <div className="AddUserSec">
+            <h1 className="Title">
+                Expenses
+            </h1>
+            <div id="section2" className="AddUserSec">
             <h2 className="">Add an expense</h2>
                 <form onSubmit={AddExp}>
                     <input id='ProName' required placeholder="Product Name" className="addUser"/>
                     <input id='Cost' required type="number" placeholder="Cost" className="addUser"/>
                     <br></br>
                     <br></br>
-                    <button className="addUser">Add User</button>
+                    <button className="addUser">Add Expense</button>
                 </form>
             </div>
             <div className="UserSec">
-            <h2>Expenses</h2>
+                <br></br>
                 <table>
                 <tr className="TBtitles">
                     <th>Product</th>
@@ -104,7 +120,7 @@ const Overview = (props) => {
             <h1 className="Title">
                 Savings
             </h1>
-            <SavingsSec totAfterTax={props.totAfterTax} totalIncome={props.totalIncome}/>
+            <SavingsSec totTaxes={props.totTaxes} totAfterTax={props.totAfterTax} totalIncome={props.totalIncome}/>
         </div>
     );
 };

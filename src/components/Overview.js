@@ -9,7 +9,6 @@ const Overview = (props) => {
     const [tableItemOne, settableItemOne] = useState();
     const [tableItemTwo, settableItemTwo] = useState();
 
-
     const AddUserSec = (e) => {
         e.preventDefault();
         let FirstName = document.getElementById('FirstName').value;

@@ -12,6 +12,15 @@ body {
   float: right;
 }
 
+.InfoIcon{
+  cursor: pointer;
+  float: left;
+  width: 35px;
+  height: 35px;
+  background-image: url(./img/160px-Infobox_info_icon.svg.png);
+  background-size: cover;
+}
+
 .Title{
   width: 100%;
   text-align: center;

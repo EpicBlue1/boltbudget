@@ -11,6 +11,21 @@ const Overview = (props) => {
     const [tableItemTwo, settableItemTwo] = useState();
     const [counter, setcounter] = useState(0);
 
+    const [renderModal, setrenderModal] = useState();
+    const [Modal, setModal] = useState()
+
+    const InfoExpense = () => {
+        setModal(<Modal rerender={setrenderModal}/>)
+    }
+
+    const InfoUsers = () => {
+        setModal(<Modal rerender={setrenderModal}/>)
+    }
+
+    const InfoSavings = () => {
+        setModal(<Modal rerender={setrenderModal}/>)
+    }
+
     const AddUserSec = (e) => {
         e.preventDefault();
         let FirstName = document.getElementById('FirstName').value;
@@ -73,10 +88,11 @@ const Overview = (props) => {
                 What is Bolt Budget?
             </h2>
             <div className="OverviewSub TitleTwo">
-                <p>lorem ipsum dolor</p>
+                <p>Bolt Budget is a web app for calculating and monitoring your family's budget. Add users to see tax brackets and after-tax income. Examine the savings section and calculate how much you can save each month using a percentage.</p>
             </div>
             <br></br>
             <hr></hr>
+            <div className="InfoIcon"></div>
             <h1 className="Title">
                 Users
             </h1>
@@ -104,6 +120,7 @@ const Overview = (props) => {
                 </table>
             </div>
             <hr></hr>
+            <div className="InfoIcon"></div>
             <h1 className="Title">
                 Expenses
             </h1>
@@ -128,6 +145,7 @@ const Overview = (props) => {
                 </table>
             </div>
             <hr></hr>
+            <div className="InfoIcon"></div>
             <h1 className="Title">
                 Savings
             </h1>

@@ -23,7 +23,7 @@ const Savings = (props) => {
     }
 
     const CalcPers = (e) => {
-        let percentage = document.getElementById('CheckBox').value;
+        let percentage = document.getElementById('PercVal').value;
 
         percentage = TotalBefore * (percentage / 100);
 
@@ -35,17 +35,17 @@ const Savings = (props) => {
         <div  id="section3" className="SavSec">
             <div className="SavingsCol float">
                 <p className="float">Calculate after tax</p>
-                <input  onClick={GetVal} className="CHECK" type="checkbox" id="love"/>
+                <input aria-label="CheckBox" onClick={GetVal} className="CHECK" type="checkbox"/>
                 <br/><br/>
                 <h2 className="SavingHeading">Percentage</h2>
-                <input id="CheckBox" placeholder="%" type="numer"/>
-                <button onClick={CalcPers}>Calculate</button>
+                <input data-testid="PercInput" id="PercVal" placeholder="%" type="numer"/>
+                <button data-testid="CalculatePerc" onClick={CalcPers}>Calculate</button>
             </div>      
             <div className="SavingsCol float">
             <h2 className="SavingHeading">Potential to save</h2>
-                <p>R {TotalBefore}</p>
+                <p data-testid="TotalToSave">R {TotalBefore}</p>
                 <h2 className="SavingHeading">Total Saved monthly</h2>
-                <p>R {TotalPercSave}</p>
+                <p data-testid="Saved">R {TotalPercSave}</p>
             </div>
         </div>
     );

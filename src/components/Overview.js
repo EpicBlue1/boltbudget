@@ -9,6 +9,7 @@ const Overview = (props) => {
 
     const [tableItemOne, settableItemOne] = useState();
     const [tableItemTwo, settableItemTwo] = useState();
+    const [counter, setcounter] = useState(0);
 
     const AddUserSec = (e) => {
         e.preventDefault();
@@ -16,6 +17,11 @@ const Overview = (props) => {
         let LastName = document.getElementById('LastName').value;
         let Salary = parseInt(document.getElementById('Salary').value);
         let obj = {name: FirstName + " " + LastName, salary: Salary}
+
+        let counter = 1;
+        counter = counter + 1;
+
+        setcounter(counter)
         
         props.UsersBef.push(obj);
 
@@ -28,7 +34,12 @@ const Overview = (props) => {
         e.preventDefault();
         let ProductName = document.getElementById('ProName').value;
         let Cost = parseInt((document.getElementById('Cost').value) + ".00");
-        let obj = {prod_name: ProductName, cost: Cost}    
+        let obj = {prod_name: ProductName, cost: Cost} 
+        
+        let counter = 1;
+        counter = counter + 1;
+
+        setcounter(counter)
         
         props.expenses.push(obj);
         console.log(props.expenses)
@@ -72,15 +83,15 @@ const Overview = (props) => {
             <div id="section1" className="AddUserSec">
             <h2 className="">Add a user</h2>
                 <form onSubmit={AddUserSec}>
-                    <input id='FirstName' required placeholder="First Name" className="addUser"/>
-                    <input id='LastName' required placeholder="Last Name" className="addUser"/>
-                    <input id='Salary' required type="number" placeholder="Income" className="addUser"/>
+                    <input data-testid="Fname" id='FirstName' required placeholder="First Name" className="addUser"/>
+                    <input data-testid="Lname" id='LastName' required placeholder="Last Name" className="addUser"/>
+                    <input data-testid="Income" id='Salary' required type="number" placeholder="Income" className="addUser"/>
                     <br></br>
                     <br></br>
-                    <button className="addUser">Add User</button>
+                    <button data-testid="AddUserBut" className="addUser">Add User</button>
                 </form>
             </div>
-            <div className="UserSec">
+            <div data-testid="UsersTable" className="UserSec">
                 <br></br>
                 <table>
                 <tr className="TBtitles">
@@ -99,11 +110,11 @@ const Overview = (props) => {
             <div id="section2" className="AddUserSec">
             <h2 className="">Add an expense</h2>
                 <form onSubmit={AddExp}>
-                    <input id='ProName' required placeholder="Product Name" className="addUser"/>
-                    <input id='Cost' required type="number" placeholder="Cost" className="addUser"/>
+                    <input data-testid="ProductName" id='ProName' required placeholder="Product Name" className="addUser"/>
+                    <input data-testid="ProCost" id='Cost' required type="number" placeholder="Cost" className="addUser"/>
                     <br></br>
                     <br></br>
-                    <button className="addUser">Add Expense</button>
+                    <button data-testid="AddExpense" className="addUser">Add Expense</button>
                 </form>
             </div>
             <div className="UserSec">

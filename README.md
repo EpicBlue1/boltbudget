@@ -122,7 +122,7 @@ Run the following in the command-line to install all the required dependencies:
 
 To see a run through of the application, click below:
 
-[View Demonstration](https://youtu.be/_ifrJrLPCv0)
+[View Demonstration](https://youtu.be/My5EZHe_pUE)
 
 ## Authors
 

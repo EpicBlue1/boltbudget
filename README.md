@@ -15,7 +15,7 @@ Reinhardt de Beer
 A web application designed for estimating your family's budget, as well as implementing, testing, and repairing unit tests!
 
 
-<img src="src/img/Logo.png" align="center" height="200" width="200" >;
+<img src="src/img/Logo.png" align="center" height="200" width="200" >
 
 
 ## Table of contents

@@ -15,7 +15,7 @@ Reinhardt de Beer
 A web application designed for estimating your family's budget, as well as implementing, testing, and repairing unit tests!
 
 
-![Logo]<img src="src/img/Logo.png" align="center" height="48" width="48" >;
+<img src="src/img/Logo.png" align="center" height="200" width="200" >;
 
 
 ## Table of contents
@@ -61,14 +61,15 @@ Run the following in the command-line to install all the required dependencies:
 | React Documentation |  https://reactjs.org/ |
 | Jest Documentation  |  https://jestjs.io/docs/expect |
 | React Router Dom    |  https://v5.reactrouter.com/web/guides/quick-start |
+| React Scroll        |  https://www.npmjs.com/package/react-scroll |
 
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- An overview displaying all members added total income, expenses and total tax expense (monthly).
+- Add Users and tax bracket and income after tax will be automatically calculated.
+- Add expenses and track total expenses.
+- Calculate savings based on income after tax or before tax.
 
 
 ## Feature Screenshots  
@@ -91,19 +92,16 @@ Run the following in the command-line to install all the required dependencies:
 
 ## Development Process
 
-* Utilized React `Charts.JS` dependency for Data visualization
-* Utilized React `<Model-Viewer>` dependency for 3D interactable globe
-* Utilized React `Sxios` dependency to make api calls
-* Implemented Routing with `React-Router v6`.
-* API End Point: https://api.nasa.gov/#browseAPI 
+* Utilized React `React` dependency for building the project
+* Utilized React `Jest` dependency for testing my code (functions and renders)
+* Implemented smooth Scrolling between sections with `React-Scroll`.
 
 ## Challenges
 
-* Utilized React `Charts.JS` dependency for Data visualization
-* Utilized React `<Model-Viewer>` dependency for 3D interactable globe
-* Utilized React `Sxios` dependency to make api calls
-* Implemented Routing with `React-Router v6`.
-* API End Point: https://api.nasa.gov/#browseAPI 
+* Jest is inconsistent at times
+* Testing useStates seems to be impossible
+* Getting grand children to set useStates in a Parent
+* Infinite loops due to useEffects not wanting to update
 
 ## Final Outcome
 
@@ -117,9 +115,7 @@ Run the following in the command-line to install all the required dependencies:
 
 ### Promotional Video
 
-To see a run through of the application, click below:
-
-[View Demonstration](https://youtu.be/_ifrJrLPCv0)
+[Promotional Video](https://youtu.be/_ifrJrLPCv0)
 
 ### Video Demonstration
 

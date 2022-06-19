@@ -27,6 +27,7 @@ A web application designed for estimating your family's budget, as well as imple
     * [Feature-Screenshots](#Feature-Screenshots)
 * [Ideation](#Ideation)
 * [Development-Process](#Development-Process)
+    * [Challenges](#Challenges)
 * [Final-Outcome](#Final-Outcome)
     * [Mockups](#Mockups)
     * [Video-Demonstration](#Video-Demonstration)

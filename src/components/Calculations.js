@@ -106,7 +106,7 @@ const Calculations = (props) => {
     settotTaxesAll(Math.round(totalTaxAllUsers));
 
     console.log(UserTaxes)
-}, []);
+});
 
 
 if(UserTaxes === undefined){

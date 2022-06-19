@@ -59,7 +59,7 @@ const Overview = (props) => {
 
         let renderTbTwo = props.expenses.map((item) => <TableItemTwo name={item.prod_name} price={item.cost}/>);
         settableItemTwo(renderTbTwo);
-    }, []);
+    });
 
     return (
         <div id="section1" className="Container">

@@ -15,7 +15,7 @@ Reinhardt de Beer
 A web application designed for estimating your family's budget, as well as implementing, testing, and repairing unit tests!
 
 
-![Logo](src/img/Logo.png);
+![Logo]<img src="src/img/Logo.png" align="center" height="48" width="48" >;
 
 
 ## Table of contents
@@ -72,24 +72,21 @@ Run the following in the command-line to install all the required dependencies:
 
 
 ## Feature Screenshots  
-#### Section One
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-#### Section One
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-#### Section One
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-#### Section One
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+#### Section One (Users)
+![App Screenshot](src/img/UsersSec.png)
+#### Section Two (Expenses)
+![App Screenshot](src/img/ExpensesSec.png)
+#### Section Three (Savings)
+![App Screenshot](src/img/SavingsSec.png)
 
 # Ideation
 [Pinterest Board For Concept](https://za.pinterest.com/debeer0072/unit-testing-website/)
-### Wireframes
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### Wireframe
+![App Screenshot](src/img/Wireframe.jpg)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### User FLow
+![App Screenshot](src/img/UserFlow.png)
 
 
 ## Development Process

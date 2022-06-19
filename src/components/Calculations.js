@@ -94,7 +94,7 @@ const Calculations = (props) => {
 
         UserTax.push({name: element.name, salary: element.salary, salaryAfterTax: incomebefore, taxB: taxBracket});
 
-    });
+    },);
 
     setUserTaxes(UserTax);
 
@@ -106,7 +106,7 @@ const Calculations = (props) => {
     settotTaxesAll(Math.round(totalTaxAllUsers));
 
     console.log(UserTaxes)
-});
+}, []);
 
 
 if(UserTaxes === undefined){

@@ -5,6 +5,26 @@ exports[`Testing Overview functions excluding savings section If overview exclud
   className="Container"
   id="section1"
 >
+  <div
+    className="ModalContainer"
+  >
+    <h1
+      className="ModalTitle"
+    >
+      Info
+    </h1>
+    <br />
+    <p
+      className="ModalPar"
+    >
+      Lol
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      Close
+    </button>
+  </div>
   <h1
     className="Title"
   >
@@ -54,11 +74,15 @@ exports[`Testing Overview functions excluding savings section If overview exclud
     className="OverviewSub TitleTwo"
   >
     <p>
-      lorem ipsum dolor
+      Bolt Budget is a web app for calculating and monitoring your family's budget. Add users to see tax brackets and after-tax income. Examine the savings section and calculate how much you can save each month using a percentage.
     </p>
   </div>
   <br />
   <hr />
+  <div
+    className="InfoIcon"
+    onClick={[Function]}
+  />
   <h1
     className="Title"
   >
@@ -133,6 +157,10 @@ exports[`Testing Overview functions excluding savings section If overview exclud
     </table>
   </div>
   <hr />
+  <div
+    className="InfoIcon"
+    onClick={[Function]}
+  />
   <h1
     className="Title"
   >
@@ -193,536 +221,10 @@ exports[`Testing Overview functions excluding savings section If overview exclud
     </table>
   </div>
   <hr />
-  <h1
-    className="Title"
-  >
-    Savings
-  </h1>
   <div
-    className="SavSec"
-    id="section3"
-  >
-    <div
-      className="SavingsCol float"
-    >
-      <p
-        className="float"
-      >
-        Calculate after tax
-      </p>
-      <input
-        aria-label="CheckBox"
-        className="CHECK"
-        onClick={[Function]}
-        type="checkbox"
-      />
-      <br />
-      <br />
-      <h2
-        className="SavingHeading"
-      >
-        Percentage
-      </h2>
-      <input
-        data-testid="PercInput"
-        id="PercVal"
-        placeholder="%"
-        type="numer"
-      />
-      <button
-        data-testid="CalculatePerc"
-        onClick={[Function]}
-      >
-        Calculate
-      </button>
-    </div>
-    <div
-      className="SavingsCol float"
-    >
-      <h2
-        className="SavingHeading"
-      >
-        Potential to save
-      </h2>
-      <p
-        data-testid="TotalToSave"
-      >
-        R 
-      </p>
-      <h2
-        className="SavingHeading"
-      >
-        Total Saved monthly
-      </h2>
-      <p
-        data-testid="Saved"
-      >
-        R 
-        Type in a percentage
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Testing Overview functions excluding savings section When Values inputs and values are updated 1`] = `
-<div
-  className="Container"
-  id="section1"
->
-  <h1
-    className="Title"
-  >
-    Overview
-  </h1>
-  <div
-    className="OverviewSub"
-  >
-    <h2
-      className="HeadingTwo inline"
-    >
-      Total Income (Household)
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      Total Expenses
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      Total Tax Expense (Household)
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      R
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      R
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      R
-    </h2>
-  </div>
-  <hr />
-  <h2
-    className="TitleTwo"
-  >
-    What is Bolt Budget?
-  </h2>
-  <div
-    className="OverviewSub TitleTwo"
-  >
-    <p>
-      lorem ipsum dolor
-    </p>
-  </div>
-  <br />
-  <hr />
-  <h1
-    className="Title"
-  >
-    Users
-  </h1>
-  <div
-    className="AddUserSec"
-    id="section1"
-  >
-    <h2
-      className=""
-    >
-      Add a user
-    </h2>
-    <form
-      onSubmit={[Function]}
-    >
-      <input
-        className="addUser"
-        data-testid="Fname"
-        id="FirstName"
-        placeholder="First Name"
-        required={true}
-      />
-      <input
-        className="addUser"
-        data-testid="Lname"
-        id="LastName"
-        placeholder="Last Name"
-        required={true}
-      />
-      <input
-        className="addUser"
-        data-testid="Income"
-        id="Salary"
-        placeholder="Income"
-        required={true}
-        type="number"
-      />
-      <br />
-      <br />
-      <button
-        className="addUser"
-        data-testid="AddUserBut"
-      >
-        Add User
-      </button>
-    </form>
-  </div>
-  <div
-    className="UserSec"
-    data-testid="UsersTable"
-  >
-    <br />
-    <table>
-      <tr
-        className="TBtitles"
-      >
-        <th>
-          Name
-        </th>
-        <th>
-          Income
-        </th>
-        <th>
-          Tax taxBracket
-        </th>
-        <th>
-          Income After Tax
-        </th>
-      </tr>
-    </table>
-  </div>
-  <hr />
-  <h1
-    className="Title"
-  >
-    Expenses
-  </h1>
-  <div
-    className="AddUserSec"
-    id="section2"
-  >
-    <h2
-      className=""
-    >
-      Add an expense
-    </h2>
-    <form
-      onSubmit={[Function]}
-    >
-      <input
-        className="addUser"
-        data-testid="ProductName"
-        id="ProName"
-        placeholder="Product Name"
-        required={true}
-      />
-      <input
-        className="addUser"
-        data-testid="ProCost"
-        id="Cost"
-        placeholder="Cost"
-        required={true}
-        type="number"
-      />
-      <br />
-      <br />
-      <button
-        className="addUser"
-        data-testid="AddExpense"
-      >
-        Add Expense
-      </button>
-    </form>
-  </div>
-  <div
-    className="UserSec"
-  >
-    <br />
-    <table>
-      <tr
-        className="TBtitles"
-      >
-        <th>
-          Product
-        </th>
-        <th>
-          Price
-        </th>
-      </tr>
-    </table>
-  </div>
-  <hr />
-  <h1
-    className="Title"
-  >
-    Savings
-  </h1>
-  <div
-    className="SavSec"
-    id="section3"
-  >
-    <div
-      className="SavingsCol float"
-    >
-      <p
-        className="float"
-      >
-        Calculate after tax
-      </p>
-      <input
-        aria-label="CheckBox"
-        className="CHECK"
-        onClick={[Function]}
-        type="checkbox"
-      />
-      <br />
-      <br />
-      <h2
-        className="SavingHeading"
-      >
-        Percentage
-      </h2>
-      <input
-        data-testid="PercInput"
-        id="PercVal"
-        placeholder="%"
-        type="numer"
-      />
-      <button
-        data-testid="CalculatePerc"
-        onClick={[Function]}
-      >
-        Calculate
-      </button>
-    </div>
-    <div
-      className="SavingsCol float"
-    >
-      <h2
-        className="SavingHeading"
-      >
-        Potential to save
-      </h2>
-      <p
-        data-testid="TotalToSave"
-      >
-        R 
-      </p>
-      <h2
-        className="SavingHeading"
-      >
-        Total Saved monthly
-      </h2>
-      <p
-        data-testid="Saved"
-      >
-        R 
-        Type in a percentage
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Testing Overview functions excluding savings section renders correctly 1`] = `
-<div
-  className="Container"
-  id="section1"
->
-  <h1
-    className="Title"
-  >
-    Overview
-  </h1>
-  <div
-    className="OverviewSub"
-  >
-    <h2
-      className="HeadingTwo inline"
-    >
-      Total Income (Household)
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      Total Expenses
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      Total Tax Expense (Household)
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      R
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      R
-    </h2>
-    <h2
-      className="HeadingTwo inline"
-    >
-      R
-    </h2>
-  </div>
-  <hr />
-  <h2
-    className="TitleTwo"
-  >
-    What is Bolt Budget?
-  </h2>
-  <div
-    className="OverviewSub TitleTwo"
-  >
-    <p>
-      lorem ipsum dolor
-    </p>
-  </div>
-  <br />
-  <hr />
-  <h1
-    className="Title"
-  >
-    Users
-  </h1>
-  <div
-    className="AddUserSec"
-    id="section1"
-  >
-    <h2
-      className=""
-    >
-      Add a user
-    </h2>
-    <form
-      onSubmit={[Function]}
-    >
-      <input
-        className="addUser"
-        data-testid="Fname"
-        id="FirstName"
-        placeholder="First Name"
-        required={true}
-      />
-      <input
-        className="addUser"
-        data-testid="Lname"
-        id="LastName"
-        placeholder="Last Name"
-        required={true}
-      />
-      <input
-        className="addUser"
-        data-testid="Income"
-        id="Salary"
-        placeholder="Income"
-        required={true}
-        type="number"
-      />
-      <br />
-      <br />
-      <button
-        className="addUser"
-        data-testid="AddUserBut"
-      >
-        Add User
-      </button>
-    </form>
-  </div>
-  <div
-    className="UserSec"
-    data-testid="UsersTable"
-  >
-    <br />
-    <table>
-      <tr
-        className="TBtitles"
-      >
-        <th>
-          Name
-        </th>
-        <th>
-          Income
-        </th>
-        <th>
-          Tax taxBracket
-        </th>
-        <th>
-          Income After Tax
-        </th>
-      </tr>
-    </table>
-  </div>
-  <hr />
-  <h1
-    className="Title"
-  >
-    Expenses
-  </h1>
-  <div
-    className="AddUserSec"
-    id="section2"
-  >
-    <h2
-      className=""
-    >
-      Add an expense
-    </h2>
-    <form
-      onSubmit={[Function]}
-    >
-      <input
-        className="addUser"
-        data-testid="ProductName"
-        id="ProName"
-        placeholder="Product Name"
-        required={true}
-      />
-      <input
-        className="addUser"
-        data-testid="ProCost"
-        id="Cost"
-        placeholder="Cost"
-        required={true}
-        type="number"
-      />
-      <br />
-      <br />
-      <button
-        className="addUser"
-        data-testid="AddExpense"
-      >
-        Add Expense
-      </button>
-    </form>
-  </div>
-  <div
-    className="UserSec"
-  >
-    <br />
-    <table>
-      <tr
-        className="TBtitles"
-      >
-        <th>
-          Product
-        </th>
-        <th>
-          Price
-        </th>
-      </tr>
-    </table>
-  </div>
-  <hr />
+    className="InfoIcon"
+    onClick={[Function]}
+  />
   <h1
     className="Title"
   >

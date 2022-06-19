@@ -100,9 +100,9 @@ table{
 
 .ModalContainer{
   margin-top: 230px;
-  margin-left: 10%;
+  margin-left: 9%;
   width: 50%;
-  height: 35vh;
+  height: 250px;
   background: #2b2b2b !important;
   background-color: #3333337f;
   position: fixed !important;
@@ -110,13 +110,18 @@ table{
   border-radius: 10px;
   text-align: center;
   color: white !important;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .ModalTitle{
-  height: 3vh;
+  height: 20px;
 }
 
 .ModalPar{
-  height: 19vh;
+  height: 100px;
 }
 
+.Hide{
+  display: none !important;
+}

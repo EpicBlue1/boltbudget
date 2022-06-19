@@ -9,21 +9,23 @@ const Overview = (props) => {
 
     const [tableItemOne, settableItemOne] = useState();
     const [tableItemTwo, settableItemTwo] = useState();
-    const [counter, setcounter] = useState(0);
-
-    const [renderModal, setrenderModal] = useState();
-    const [Modal, setModal] = useState()
+    const [Props, setPops] = useState("Welcome to Bolt Budget");
+    
+    const [isActive, setActive] = useState("false");
 
     const InfoExpense = () => {
-        setModal(<Modal rerender={setrenderModal}/>)
+        setPops("Expenses can be examined in the expense section. New expense can be added by entering their name and cost, the total will be calculated automatically and displayed in the overview section.")
+        setActive(!isActive);
     }
 
     const InfoUsers = () => {
-        setModal(<Modal rerender={setrenderModal}/>)
+        setPops("User tax brackets and salary after tax can be examined in the User section. New users can be added by entering their first name, last name, and income; the tax brackets will be calculated automatically.")
+        setActive(!isActive);
     }
 
     const InfoSavings = () => {
-        setModal(<Modal rerender={setrenderModal}/>)
+        setPops("Savings can be calculated as a percentage of the total before and after tax using the check box. The total amount to be saved will be displayed.")
+        setActive(!isActive);
     }
 
     const AddUserSec = (e) => {
@@ -32,11 +34,6 @@ const Overview = (props) => {
         let LastName = document.getElementById('LastName').value;
         let Salary = parseInt(document.getElementById('Salary').value);
         let obj = {name: FirstName + " " + LastName, salary: Salary}
-
-        let counter = 1;
-        counter = counter + 1;
-
-        setcounter(counter)
         
         props.UsersBef.push(obj);
 
@@ -51,11 +48,6 @@ const Overview = (props) => {
         let Cost = parseInt((document.getElementById('Cost').value) + ".00");
         let obj = {prod_name: ProductName, cost: Cost} 
         
-        let counter = 1;
-        counter = counter + 1;
-
-        setcounter(counter)
-        
         props.expenses.push(obj);
         console.log(props.expenses)
     }
@@ -67,12 +59,12 @@ const Overview = (props) => {
 
         let renderTbTwo = props.expenses.map((item) => <TableItemTwo name={item.prod_name} price={item.cost}/>);
         settableItemTwo(renderTbTwo);
-    });
+    }, []);
 
     return (
         <div id="section1" className="Container">
-            {/* <Modal /> */}
-            <h1  className="Title">
+            <Modal info={Props} isActive={isActive} setActive={setActive}/>
+            <h1  className="Title"> 
                 Overview
             </h1>
             <div className="OverviewSub">
@@ -92,7 +84,7 @@ const Overview = (props) => {
             </div>
             <br></br>
             <hr></hr>
-            <div className="InfoIcon"></div>
+            <div onClick={InfoUsers} className="InfoIcon"></div>
             <h1 className="Title">
                 Users
             </h1>
@@ -120,7 +112,7 @@ const Overview = (props) => {
                 </table>
             </div>
             <hr></hr>
-            <div className="InfoIcon"></div>
+            <div onClick={InfoExpense} className="InfoIcon"></div>
             <h1 className="Title">
                 Expenses
             </h1>
@@ -145,7 +137,7 @@ const Overview = (props) => {
                 </table>
             </div>
             <hr></hr>
-            <div className="InfoIcon"></div>
+            <div onClick={InfoSavings} className="InfoIcon"></div>
             <h1 className="Title">
                 Savings
             </h1>

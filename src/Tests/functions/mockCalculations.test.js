@@ -9,7 +9,7 @@ describe('Mock Tests For the Tax brackets and Income after tax', () => {
     const array = [{name: "Stevie Wonder", salary: 600}];
 
     beforeEach(() => {
-        console.log("Overview Functions Test")
+        console.log("MockCalcs Functions Test")
         render(<Calculations array={array}/>);
     })
 
@@ -52,6 +52,10 @@ describe('Mock Tests For the Tax brackets and Income after tax', () => {
         expect(resultElement.textContent).toBe("Lebron James")
     })
 
+    test("If user is added to Object Array", () =>{
+        expect(array).toEqual([{name: "Stevie Wonder", salary: 600}, {name: "Lebron James", salary: 30000}]);
+    })
+
     it('tests if inputs and dom update and add', () => {
         const component = renderer.create(<Calculations array={array}/>).toJSON();
 
@@ -63,15 +67,5 @@ describe('Mock Tests For the Tax brackets and Income after tax', () => {
     
         expect(component).toMatchSnapshot();
     });
-
-    test("If user is added to Object Array", () =>{
-        expect(array).toEqual([{name: "Stevie Wonder", salary: 600}, {name: "Lebron James", salary: 30000}]);
-    })
-
-    // it('If mockWebbApp renders correctly', () => {
-    //     const component = renderer.create(<Calculations array={array}/>).toJSON();
-    
-    //     expect(component).toMatchSnapshot();
-    // });
 
 })

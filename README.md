@@ -1,10 +1,10 @@
 
 ## Repo Info
 
-![GitHub repo size](https://img.shields.io/github/repo-size/EpicBlue1/OOP_21100115_ReinhardtdeBeer)
-![GitHub watchers](https://img.shields.io/github/watchers/EpicBlue1/OOP_21100115_ReinhardtdeBeer)
-![GitHub language count](https://img.shields.io/github/languages/count/EpicBlue1/OOP_21100115_ReinhardtdeBeer)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EpicBlue1/OOP_21100115_ReinhardtdeBeer)
+![GitHub repo size](https://img.shields.io/github/repo-size/EpicBlue1/boltbudget)
+![GitHub watchers](https://img.shields.io/github/watchers/EpicBlue1/boltbudget)
+![GitHub language count](https://img.shields.io/github/languages/count/EpicBlue1/boltbudget)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EpicBlue1/boltbudget)
 
 
 Reinhardt de Beer
@@ -37,12 +37,12 @@ A web application designed for estimating your family's budget, as well as imple
 ## Installation
 
 1. GitHub Desktop
-Enter `https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/EpicBlue1/boltbudget.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer.git
+   git clone https://github.com/EpicBlue1/boltbudget.git
    ```
     Open `IDE` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -99,15 +99,30 @@ Run the following in the command-line to install all the required dependencies:
 * Utilized React `Sxios` dependency to make api calls
 * Implemented Routing with `React-Router v6`.
 * API End Point: https://api.nasa.gov/#browseAPI 
+
+## Challenges
+
+* Utilized React `Charts.JS` dependency for Data visualization
+* Utilized React `<Model-Viewer>` dependency for 3D interactable globe
+* Utilized React `Sxios` dependency to make api calls
+* Implemented Routing with `React-Router v6`.
+* API End Point: https://api.nasa.gov/#browseAPI 
+
 ## Final Outcome
 
 ### Mockups
 
-![Mockup One](src/img/Mockup1.png)
+![Mockup One](src/img/IMAC%20SEVERAL%20COLORS%20FREE.jpg)
 
-![Mockup Two](src/img/Mockup2.png)
+![Mockup Two](src/img/Mockup.jpg)
 
-![Mockup Three](src/img/Mockup3.png)
+![Mockup Three](src/img/MockupTwo.jpg)
+
+### Promotional Video
+
+To see a run through of the application, click below:
+
+[View Demonstration](https://youtu.be/_ifrJrLPCv0)
 
 ### Video Demonstration
 
@@ -126,4 +141,4 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 * **Reinhardt de Beer** - [21100115@virtualwindow.co.za](mailto:21100115@virtualwindow.co.za) - [@rdb_fotopatat](https://www.instagram.com/rdb_fotopatat/) 
-* **Project Link** - https://github.com/EpicBlue1/OOP_21100115_ReinhardtdeBeer
+* **Project Link** - https://github.com/EpicBlue1/boltbudget
